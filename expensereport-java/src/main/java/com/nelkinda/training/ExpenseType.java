@@ -4,13 +4,10 @@ enum ExpenseType {
     DINNER, BREAKFAST, CAR_RENTAL;
 
     public String getName() {
-        switch (this) {
-            case DINNER:
-                return "Dinner";
-            case BREAKFAST:
-                return "Breakfast";
-            default:
-                return "Car Rental";
-        }
+        return switch (this) {
+            case DINNER -> "Dinner";
+            case BREAKFAST -> "Breakfast";
+            default -> "Car Rental";
+        };
     }
 }
