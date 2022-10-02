@@ -7,7 +7,7 @@ enum ExpenseType {
         return switch (this) {
             case DINNER -> "Dinner";
             case BREAKFAST -> "Breakfast";
-            default -> "Car Rental";
+            case CAR_RENTAL -> "Car Rental";
         };
     }
 }
